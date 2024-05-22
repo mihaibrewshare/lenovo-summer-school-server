@@ -1,0 +1,27 @@
+{
+  "name": "lenovo-summer-school-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihaibrewshare/lenovo-summer-school-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihaibrewshare/lenovo-summer-school-server/issues"
+  },
+  "homepage": "https://github.com/mihaibrewshare/lenovo-summer-school-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0",
+    "nodemon": "^3.1.0"
+  }
+}
