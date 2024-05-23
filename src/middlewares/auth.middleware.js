@@ -16,7 +16,7 @@ export const checkAuthToken = (req, res, next) => {
   }
 
   const payload = verify(token);
-  if (!payload) {
+  if (!payload || !payload.username) {
     return res
       .status(401)
       .json({ success: false, message: "Token not valid!" });
