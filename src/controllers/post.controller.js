@@ -2,7 +2,7 @@ import Post from "../models/Post";
 
 export const addPost = async (req, res, next) => {
   try {
-    const author = req.headers["username"];
+    const author = req.username;
     const { title, content } = req.body;
 
     if (!title || !content) {
